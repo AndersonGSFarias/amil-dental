@@ -1,0 +1,16 @@
+{
+  "name": "amil-dental-bordin",
+  "version": "1.0.0",
+  "author": "Anderson G S Farias",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch",
+    "build": "npx tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --minify && cp src/index.html dist/index.html && cp -r src/js dist/js"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "remixicon": "^4.6.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.12"
+  }
+}

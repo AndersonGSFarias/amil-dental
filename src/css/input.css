@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: rgb(70, 27, 255);
+  --color-secundary: #363b4f;
+  --color-prim-banner: rgb(70, 27, 255);
+  --color-sec-banner: rgb(0, 173, 255);
+  --color-prim-text: #777;
+  --color-sec-text: #6e6e6e;
+  --color-third-text: #461bff;
+  --color-four-text: rgb(237, 237, 237);
+}
+
+/* Modelos */
+
+.button {
+  @apply bg-primary uppercase text-white   rounded-[50px] font-bold;
+}
+
+.menu-opt {
+  @apply uppercase font-bold text-gray-700 hover:text-blue-600 text-[0.8rem];
+}
+
+/* Galeria de planos dentais */
+
+.plans-box {
+  @apply flex flex-col justify-center items-center text-center text-white w-[93%] lg:w-[20%];
+}
+
+.plans-box > div > h1 {
+  @apply font-bold my-[0.6rem];
+}
+
+.plans-box > div > p {
+  @apply mb-[0.7rem] leading-tight;
+}
+
+.plans-box > button {
+  @apply bg-sec-banner h-[2.25rem] uppercase font-bold w-[100%];
+}
+
+.plans-img {
+  @apply bg-sec-banner h-[18rem];
+}
+
+/* Galeria de planos dentais com os preços */
+
+.plans-price-box {
+  @apply flex flex-col mt-[2rem] w-[90%] lg:w-[20rem] mx-auto justify-center items-center text-center;
+}
+
+.plans-price-title {
+  @apply bg-four-text w-[99.2%] h-[5rem] flex items-center justify-center rounded-t-[10px] z-1;
+}
