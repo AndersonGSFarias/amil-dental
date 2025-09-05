@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Anderson G S Farias",
   "scripts": {
-    "build": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --minify && cp src/index.html dist/index.html && cp -r src/js dist/js",
+    "build": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --minify && cp -r src/js dist/js",
     "dev": "tailwindcss -i ./src/css/input.css -o ./dist/css/output.css --watch"
   },
   "dependencies": {
